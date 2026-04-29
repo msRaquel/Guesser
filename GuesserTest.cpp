@@ -60,7 +60,7 @@ TEST(GuesserTest, VerifyRemainingAttempts) {
     my_guess.match("wrong2");
     my_guess.match("wrong3");
 
-    EXPECT_FALSE(my_guess.match("secret")) << "Object should be locked after 3 failed attempts";
+    EXPECT_FALSE(my_guess.match("secret"));
 }
 
 TEST(GuesserTest, verify_match) {
